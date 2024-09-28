@@ -1,7 +1,23 @@
 # Linq Day 2
-having `productlist`
-`var result =` return type is sequence that implementing IEumerable interface 
-basicly determined acording to query operator you use
+## Content
+- [Where](#where)
+- [Select](#select)
+- [Ordering Elements](#ordering-elements)
+- [Element Operators - Imidiate Execution](#element-operators---imidiate-execution)
+- [Aggregate - Imidiate Execution](#aggregate---imidiate-execution)
+- [Generators Operators](#generators-operators)
+- [Select Many](#select-many)
+- [Casting Operators : Imidiate Execution](#casting-operators--imidiate-execution)
+- [Set Operators](#set-operators)
+- [Quantifiers , return Boolean](#quantifiers--return-boolean)
+- [Zip](#zip)
+- [Let , Into](#let--into)
+
+>**Basically**
+>we have `productlist`
+>`var result =` return type is sequence that implementing IEumerable interface 
+>Actually type -> determined acording to query operator you use
+
 ## `Where`
 
 Filteration function using to filter sequence based on bool func
