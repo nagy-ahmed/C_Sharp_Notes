@@ -15,6 +15,7 @@
 
 >**Basically**
 >we have `productlist`
+>
 >`var result =` return type is sequence that implementing IEumerable interface 
 >Actually type -> determined acording to query operator you use
 
