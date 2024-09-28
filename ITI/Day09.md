@@ -2,12 +2,13 @@
 having `productlist`
 `var result =` return type is sequence that implementing IEumerable interface 
 basicly determined acording to query operator you use
-### ==Where==
+## `Where`
+
 Filteration function using to filter sequence based on bool func
 **it has two overloading**
-- First  
- `first input ienumerable`
- `second input func -> take object and return bool `
+- First
+  - `first input ienumerable`
+  - `second input func -> take object and return bool `
 ```cs
 var result = productlist.where(p=>p.unitsinstock==0);
     result = form p in productlist 
@@ -18,14 +19,14 @@ result = productlist.where( p=> (p.unitsinstock==0) && (p.category=="meat"));
 
 ```
 - Second  indexed where
-`valid only on fluent syntax format`
- `first input ienumerable`
- `second input func -> take object and index and return bool `
+  - `valid only on fluent syntax format`
+  - `first input ienumerable`
+  - `second input func -> take object and index and return bool `
 ```cs
 var result = productlist.where((p,i)=>p.unitsinstock==0 && i<=10);
 ```
 
-### ==Select== 
+## `Select`
 Transformation operator -> transform every element in i/p seq to a new element in o/p seq of new data type
 `num of i/p seq = num o\p seq`
 for ex : want to return new obj (name , id) only `anynoums type`
@@ -78,7 +79,7 @@ res = productlist.select((p,i)=>new{ index=i , p.productname})
 ```
 
 
-### ==Ordering Elements==
+## `Ordering Elements`
 ##### Ordering by one property 
 `OrderBy`
 ```cs
@@ -116,7 +117,7 @@ res = productlist.select((p,i)=>new{ index=i , p.productname})
 
 
 
-### ==Element Operators - Imidiate Execution==
+## `Element Operators - Imidiate Execution`
 ```cs
 var Result = productlist.First();
     result = productlist.First();
@@ -175,7 +176,7 @@ var R = (from Pin ProductList
     Console.WriteLine (Result?. ProductName ?? "NA");
 ```
 
-### ==Aggregate - Imidiate Execution==
+##  `Aggregate - Imidiate Execution`
 min , max , count
 **Selector** `func that take obj and return value`
 ```cs
@@ -205,7 +206,7 @@ var result = ProductList.Count;//built in prop of list
 ```
 search for it `ProductList.Aggregate`
 
-### ==Generators Operators==
+## `Generators Operators`
 **generating output seq**
 **only way to call them is as static memberes from Enumerable class**
 ```cs
@@ -220,7 +221,7 @@ var r3 = Enumerable.Reapeat(ProductList[2],5);
 //this make copy of ref
 //so when change one product all list in r3 is the same
 ```
-### ==Select Many==
+## `Select Many`
 **Output Seq count > Input Seq Count
 transform each element in input Seq to subSeq (IEnumerable<>)**
 
@@ -235,7 +236,7 @@ var result = NameList.SelectMany(fn = > fn.Split(' '));
 //each will be and make all list in one list 
 ```
 
-### ==Casting Operators : Imidiate Execution==
+## `Casting Operators : Imidiate Execution`
 ```cs
 //List<Product> lst = ProductList.Where(p=>p.UnitsInStock==0); 
 //1. here is wrong
@@ -254,7 +255,7 @@ var lst = ProductList.Where(p=>p.UnitsInStock==0)
 //.ToLookUp();
 ```
 
-### ==Set Operators==
+## `Set Operators`
 
 ```cs
 var seq1 = Enumerable.Range(0,99); // 0:99
@@ -270,7 +271,7 @@ res = seq1.Distinct(); //also take comparer object
 res = seq1.Except(seq2);//in seq1 and not in seq2
 res = seq1.Intersect(seq2);//in seq1 and in seq2
 ```
-### ==Quantifiers , return Boolean==
+## `Quantifiers , return Boolean`
 `any`
 ```cs
 Console.Write(ProductList.Any());//return true if seq have at least one element
@@ -285,7 +286,7 @@ Console.Write(ProductList.All(p=>p.unitprice>200));// return true if all element
 Console.Write(seq1.SeqenceEqual(seq2));// return true if two equal using default IEqualityComparer
 Console.Write(seq1.SeqenceEqual(seq2,Comparer));//also can take IEqualityComparer Object
 ```
-### ==Zip==
+## `Zip`
 `input 2 seq , one combined seq`
 
 ```cs
@@ -297,7 +298,7 @@ IEnumerable<string> zip = words.Zip (numbers, (w, n) => w + "=" + n);// compine 
 //seven = 7
 ///result will be same size like smaller to can combine the two seq 
 ```
-### ==Grouping==
+## `Grouping`
 `result in groups not one seq (look like many seqences)`
 ```cs
 var res = from p in productlist
@@ -329,7 +330,7 @@ var res = ProductList.GroupBy(p=>p.productcategory).where(prdG=>prdG.Count()>5)
                     .orderByDescending(PG=>PG.Count())
                     .Select(PG=>new{Category = PrdGroup.Key , ProductCount = PrdGroup.Count()};)
 ```
-### ==Let , Into==
+## `Let , Into`
 `Introductin new range variable in quary syntax`
 `introduce new variables or restart the query again`
 
