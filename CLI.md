@@ -12,7 +12,7 @@ We found .NET sdk , runtime , what is the diffrence between?
 - `cd` change directory
 - `cd..` using to step back
 - `mkdir` make directory
-  - `makdir folder1, folder2, folder3` 
+  - `mkdir folder1, folder2, folder3` 
 - `rmdir` folder1  
 - `echo file1.txt` using to make file with name file1.txt
 - `notepad file1.txt` using to open file using notepad prog
