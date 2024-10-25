@@ -45,6 +45,7 @@ ___
 
     ![alter](images/Ado.net.png)
 
+
 - Any DB has Provider which follow base provider ( ODBC Provider ) 
   - for Sql Server you install its provider `System.Data.SqlClient`
     
@@ -59,6 +60,8 @@ ___
         - System.Data.SqlClient.SqlTransaction
         - System.Data.SqlClient.SqlParameterCollection
         - System.Data.SqlClient.SqlClientFactory
+    
+     ![alt text](images/DataAccessNet.png)
          
 ### 3.1. `SqlConnection`
 
