@@ -6,7 +6,7 @@
 | Day 3   | Joins  <br> Normalization |
 | Day 4   | Aggregate Functions  <br> Grouping  <br> Union - Subquery  <br> EERD |
 | Day 5   | DB Engines  <br> Services  <br> Ranking Functions  <br> Transact-SQL |
-| Day 6   | DB Constraints  <br> Create DB (SQL Server)  <br> Rules - Create DB |
+| Day 6   |Create DB (SQL Server internals)  <br> DB Constraints  <br>  Rules - Default - new DataType |
 | Day 7   | Variables  <br> if/while  <br> Functions |
 | Day 8   | Views  <br> Indexes  <br> Merge - Pivot Tables |
 | Day 9   | Stored Procedures  <br> Triggers  <br> XML |
