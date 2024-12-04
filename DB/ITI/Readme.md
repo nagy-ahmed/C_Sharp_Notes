@@ -8,6 +8,6 @@
 | Day 5   | DB Engines  <br> Services  <br> Ranking Functions  <br> Transact-SQL |
 | Day 6   |Create DB (SQL Server internals)  <br> DB Constraints  <br>  Rules - Default - new DataType |
 | Day 7   | Variables  <br> if/while  <br> Functions |
-| Day 8   | Views  <br> Indexes  <br> Merge - Pivot Tables |
+| Day 8   | System Database <br> Indexes <br> Pivot Tables <br> Views <br> Merge|
 | Day 9   | Stored Procedures  <br> Triggers  <br> XML |
 | Day 10  | Backup - Restore  <br> Mirroring  <br> Cursors  <br> Jobs  <br> SQL Clr |
