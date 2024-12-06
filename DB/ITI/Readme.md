@@ -10,4 +10,4 @@
 | Day 7   | Variables  <br> if/while  <br> Functions |
 | Day 8   | System Database <br> Indexes <br> Pivot Tables <br> Views <br> Merge|
 | Day 9   | Stored Procedures  <br> Triggers  <br> XML |
-| Day 10  | Backup - Restore  <br> Mirroring  <br> Cursors  <br> Jobs  <br> SQL Clr |
+| Day 10  | Cursors  <br> Backup - Restore  <br> Jobs <br> Identity gab , Bulk insert <br> Snapshot <br> SQL Clr |
