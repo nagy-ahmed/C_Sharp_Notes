@@ -4,6 +4,5 @@
 
 ___
 ### [Day1](01.md)
-- Intro to web app
-- Setup project 
-- What's the different parts of project?
+- [Intro to web app](01.md/#1-introduction)
+- [Setup project](01.md/#2-project)
